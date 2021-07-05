@@ -2,7 +2,7 @@
 # Software Engineering Project 2021
 ### BSc (Hons) Computing in Software Development
 
-## Introduction
+## [Introduction](https://github.com/GraceKeane/SaaS-application/blob/main/project-description.md)
 The project will address the module learning outcomes by focusing on the following topics:
 - Software as a Service / Cloud Computing 
 - Web Application Architectures (MVC)
