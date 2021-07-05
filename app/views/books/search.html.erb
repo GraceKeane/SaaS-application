@@ -1,0 +1,14 @@
+<h1>Books that has the same Author as <%= @book.title %></h1>
+
+<ul>
+  <% @similar_books.each do |arg1| %>
+  
+  <li>
+    <%= arg1 %>
+  </li>
+
+<% end %>
+
+</ul>
+
+<%= link_to 'Back', books_path, :class => 'btn btn-secondary' %>

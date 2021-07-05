@@ -1,0 +1,21 @@
+<h1>Editing Book</h1>
+
+
+<%= form_tag book_path(@book), :method => :put do %>
+  <%= label :book, :title, 'Title', :class => 'col-form-label' %>
+  <%= text_field :book, 'title', :class => 'form-control' %>
+  <br>
+  <%= label :book, :genre, 'Genre', :class => 'col-form-label'  %>
+  <%= select :book, :genre, ['Fiction', 'Gothic fiction', 'Tragedy', 'Science Fiction', 'Thriller', 'Horror', 'Romance', 'Historical'], {}, {:class => 'form-control col-2'} %>
+  <br>
+  <%= label :book, :author, 'Author', :class => 'col-form-label' %>
+  <%= text_field :book, 'author', :class => 'form-control' %>
+  <br>
+  <%= label :book, :release_date, 'Released On : ', :class => 'col-form-label'  %>
+  <%= date_select :book, :release_date, {}, :class => 'form-control col-2 d-inline' %>
+  <br>
+  <br>
+  <%= submit_tag 'Update Book Info', :class => 'btn btn-secondary' %>
+  <%= link_to 'Cancel', books_path, :class => 'btn btn-secondary' %>
+
+<% end %>
